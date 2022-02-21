@@ -1,5 +1,8 @@
 class PlacesController < ApplicationController
     def index
-        @places = ["Mumbai", "Manhattan", "Paris", "Miami"] 
+        @places = Place.all
+    end
+    def new
+        @place = Place.new
     end
 end
